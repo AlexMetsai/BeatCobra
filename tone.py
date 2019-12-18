@@ -13,6 +13,7 @@ class ToneGenerator:
     self.T = duration
     self.rate = rate
     self.harmonics_num = harmonics_num
+    # create the time intervals
     self.t = np.linspace(0, self.T, self.T*rate, endpoint=False)
   
   def generate(self, f):
