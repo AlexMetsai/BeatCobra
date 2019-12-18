@@ -10,7 +10,10 @@ class ToneGenerator:
   Duration in seconds (s).
   '''
   def __init__(self, duration=3, rate=22050, harmonics_num=3):
-    # TODO
+    self.T = duration
+    self.rate = rate
+    self.harmonics_num = harmonics_num
+    self.t = np.linspace(0, self.T, self.T*rate, endpoint=False)
   
   def generate(self, f):
     # TODO
