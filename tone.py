@@ -23,3 +23,6 @@ class ToneGenerator:
     with frequencies that are multiples of f (2f, 3f, 4f etc.)
     '''
     x = self.waveform(f)
+    for i in range(1, self.harmonics_num+1):
+      # add harmonics TODO
+    return(x)
