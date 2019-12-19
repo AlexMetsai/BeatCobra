@@ -17,4 +17,5 @@ class ToneGenerator:
     self.t = np.linspace(0, self.T, self.T*rate, endpoint=False)
   
   def generate(self, f):
-    # TODO
+    
+    x = self.waveform(f)
