@@ -28,3 +28,6 @@ class ToneGenerator:
       x += np.power(0.5,i)*self.waveform((i+1)*f)
       
     return(x)
+
+class SineGenerator(ToneGenerator):
+  #TODO
