@@ -24,7 +24,7 @@ class ToneGenerator:
     '''
     x = self.waveform(f)
     for i in range(1, self.harmonics_num+1):
-      # add harmonics TODO
       # Each consecutive harmonic has less energy than the previous one.
-      # ^keep the above in mind
+      x += np.power(0.5,i)*self.waveform((i+1)*f)
+      
     return(x)
