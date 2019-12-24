@@ -34,3 +34,7 @@ class ToneGenerator:
 class SineGenerator(ToneGenerator):
     def __init__(self, duration=3, rate=22050, harmonics_num=3):
         super().__init__(duration, rate, harmonics_num)
+    
+    def waveform(self, f):
+        wave = np.sin(2*np.pi*f*self.t)
+        return(wave)
