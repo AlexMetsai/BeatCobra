@@ -55,3 +55,6 @@ class SawGenerator(ToneGenerator):
     def waveform(self, f):
         wave = signal.sawtooth(2*np.pi*f*self.t)
         return(wave)
+
+if __name__=='__main__':
+    # This module is ment to be called, but show some examples.
