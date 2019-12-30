@@ -58,3 +58,4 @@ class SawGenerator(ToneGenerator):
 
 if __name__=='__main__':
     # This module is ment to be called, but show some examples.
+    # Would it be best to save or play the generated waveforms?
