@@ -47,3 +47,7 @@ class SquareGenerator(ToneGenerator):
     def waveform(self, f):
         wave = signal.square(2*np.pi*f*self.t)
         return(wave)
+
+class SawGenerator(ToneGenerator):
+    def __init__(self, duration=3, rate=22050, harmonics_num=3):
+        super().__init__(duration, rate, harmonics_num)
