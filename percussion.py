@@ -21,3 +21,10 @@ class PercussionGenerator:
         # In the future, add more options for the type of decay.
         x = np.exp(-decay_factor*self.t)
         return(x)
+
+
+class Snare(PercussionGenerator):
+    '''
+    A simple snare-like sound can be generated
+    by a rapidly decaying noise.
+    '''
