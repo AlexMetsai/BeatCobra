@@ -30,3 +30,11 @@ class Snare(PercussionGenerator):
     '''
     def __init__(self, duration=3, rate=22050, decay_factor=10):
         super().__init__(duration, rate, decay_factor)
+    
+    def noise(self, noise_color):
+        if noise_color == 'white':
+            return(np.random.random(self.t.shape))
+        else:
+            print("Error: noise color", noise_color, "not supported.")
+            exit(-1)
+    
