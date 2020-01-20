@@ -28,3 +28,5 @@ class Snare(PercussionGenerator):
     A simple snare-like sound can be generated
     by a rapidly decaying noise.
     '''
+    def __init__(self, duration=3, rate=22050, decay_factor=10):
+        super().__init__(duration, rate, decay_factor)
