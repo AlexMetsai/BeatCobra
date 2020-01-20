@@ -38,3 +38,8 @@ class Snare(PercussionGenerator):
             print("Error: noise color", noise_color, "not supported.")
             exit(-1)
     
+    def generate(self, decay_factor=10, noise_color='white'):
+        noise = self.noise(noise_color)
+        decay = self.decay_function(decay_factor)
+        wave = noise * decay
+        return(wave)
