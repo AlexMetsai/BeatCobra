@@ -43,4 +43,8 @@ def snare_kick_kick(beat_repeats=30):
     wavio.write('demo_beat1.wav',beat, snare.rate, sampwidth=SAMPWIDTH)
 
 if __name__=='__main__':
+    
+    print('You may have have to adjust the volume depending on your device.\n \
+           MIND YOUR EARS IF WEARING HEADPHONES!')
+    
     snare_kick_kick()
