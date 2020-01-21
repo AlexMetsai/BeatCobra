@@ -10,6 +10,16 @@ from tone import *
 # For a 24 bit file, wav.sampwidth must be equal to 3.
 SAMPWIDTH = 3
 
+
+def proto_loop(sample, loop_num):
+    '''
+    A prototype for a looping functionality. 
+    Used in the demos for now, in the future a more advanced method may be 
+    needed to be inserted into the core modules.
+    '''
+    return(np.tile(sample, loop_num))
+
+
 def snare_kick_kick(beat_repeats=30):
     '''
     Simple demo with a kick/snare beat.
