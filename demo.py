@@ -36,6 +36,9 @@ def snare_kick_kick(beat_repeats=30):
     # Merge samples to create a beat.
     beat = np.concatenate((snare_sample, kick_sample, kick_sample), axis=0)
     
+    # Loop the beat
+    beat = proto_loop(beat, 10)
+    
     # Write output to file.
     wavio.write('demo_beat1.wav',beat, snare.rate, sampwidth=SAMPWIDTH)
 
