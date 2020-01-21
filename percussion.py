@@ -43,3 +43,18 @@ class Snare(PercussionGenerator):
         decay = self.decay_function(decay_factor)
         wave = noise * decay
         return(wave)
+
+
+class KickDrum(PercussionGenerator, SineGenerator):
+    '''
+    A simple kick drum sound can be generated
+    by a decaying low frequency wave.
+    '''
+    def __init__(self, duration=3, rate=22050, decay_factor=10):
+        super().__init__(duration, rate, decay_factor)
+    
+    def generate(self, decay_factor=10, f=70):
+        x = self.waveform(f)
+        decay = self.decay_function(decay_factor)
+        wave = x * decay
+        return(wave)
