@@ -3,6 +3,7 @@
 import numpy as np
 import wavio
 from scipy import signal
+from tone import *
 
 
 class PercussionGenerator:
