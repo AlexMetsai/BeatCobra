@@ -28,3 +28,6 @@ def snare_kick_kick(beat_repeats=30):
     
     # Write output to file.
     wavio.write('demo_beat1.wav',beat, snare.rate, sampwidth=SAMPWIDTH)
+
+if __name__=='__main__':
+    snare_kick_kick()
