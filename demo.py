@@ -42,6 +42,13 @@ def snare_kick_kick(beat_repeats=30):
     # Write output to file.
     wavio.write('demo_beat1.wav',beat, snare.rate, sampwidth=SAMPWIDTH)
 
+def major_scale(root_note=440):
+    '''
+    Simple demo playing the major scale, given the root note.
+    '''
+    #TODO
+    pass
+
 if __name__=='__main__':
     
     print('You may have have to adjust the volume depending on your device.\n' +
