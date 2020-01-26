@@ -46,8 +46,8 @@ def major_scale(root_note=440):
     '''
     Simple demo playing the major scale, given the root note.
     '''
-    #TODO
-    # !TEST!
+    # TODO
+    # Should I calculate the frequencies or use standard values? 
     pass
 
 if __name__=='__main__':
