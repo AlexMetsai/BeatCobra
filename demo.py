@@ -47,6 +47,7 @@ def major_scale(root_note=440):
     Simple demo playing the major scale, given the root note.
     '''
     #TODO
+    # !TEST!
     pass
 
 if __name__=='__main__':
