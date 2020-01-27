@@ -42,13 +42,19 @@ def snare_kick_kick(beat_repeats=30):
     # Write output to file.
     wavio.write('demo_beat1.wav',beat, snare.rate, sampwidth=SAMPWIDTH)
 
-def major_scale(root_note=440):
+def major_scale(root_note=440, mode='fixed'):
     '''
     Simple demo playing the major scale, given the root note.
     '''
     # TODO
     # Should I calculate the frequencies or use standard values? 
-    pass
+    if mode=='fixed':
+        C_major = [261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25]
+    else:
+        print('Mode not supported')
+        exit(1)
+
+    
 
 if __name__=='__main__':
     
