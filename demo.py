@@ -42,7 +42,7 @@ def snare_kick_kick(beat_repeats=30):
     # Write output to file.
     wavio.write('demo_beat1.wav',beat, snare.rate, sampwidth=SAMPWIDTH)
 
-def major_scale(root_note=440, mode='fixed'):
+def major_scale(root_note=440, waveform='square',mode='fixed'):
     '''
     Simple demo playing the major scale, given the root note.
     '''
@@ -53,6 +53,16 @@ def major_scale(root_note=440, mode='fixed'):
     else:
         print('Mode not supported')
         exit(1)
+    
+    if waveform=='square':
+        generator = SquareGenerator()
+    else:
+        print('Waveform generator not supported.')
+        exit(1)
+    
+    for frequency in C_major:
+        # Play scale.
+        
 
     
 
