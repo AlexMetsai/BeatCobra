@@ -15,7 +15,7 @@ class PercussionGenerator:
         self.T = duration
         self.rate = rate
         self.decay_factor = decay_factor
-        self.t = np.linspace(0, self.T, self.T*rate, endpoint=False)
+        self.t = np.linspace(0, self.T, int(self.T*rate), endpoint=False)
   
     def decay_function(self, decay_factor=10):
         # Exponential decay.

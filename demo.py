@@ -26,8 +26,8 @@ def snare_kick_kick(beat_repeats=30):
     '''
     
     # Create sample generator objects.
-    snare = Snare(duration=1)
-    kick = KickDrum(duration=1)
+    snare = Snare(duration=0.5)
+    kick = KickDrum(duration=0.5)
     
     # Generate samples.
     snare_sample = snare.generate(decay_factor=15)
