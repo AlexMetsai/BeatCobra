@@ -26,8 +26,8 @@ def snare_kick_kick(beat_repeats=30):
     '''
     
     # Create sample generator objects.
-    snare = Snare(duration=0.5)
-    kick = KickDrum(duration=0.5)
+    snare = Snare(duration=1)
+    kick = KickDrum(duration=1)
     
     # Generate samples.
     snare_sample = snare.generate(decay_factor=15)
@@ -62,9 +62,7 @@ def major_scale(root_note=440, waveform='square',mode='fixed'):
     
     for frequency in C_major:
         # Play scale.
-        
-
-    
+        pass
 
 if __name__=='__main__':
     
