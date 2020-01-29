@@ -10,3 +10,5 @@ So far BeatCobra can generate synthesizer and simple percussion sounds. Future m
 - wavio 0.0.4
 
 It is recomended to set the above using a virtual enviroment.
+
+Warning: Mind your ears if wearing headphones!
