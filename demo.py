@@ -40,7 +40,7 @@ def snare_kick_kick(beat_repeats=30):
     beat = proto_loop(beat, 10)
     
     # Write output to file.
-    wavio.write('demo_beat1.wav',beat, snare.rate, sampwidth=SAMPWIDTH)
+    wavio.write('generated_demos/snare_kick_kick_beat.wav', beat, snare.rate, sampwidth=SAMPWIDTH)
 
 def major_scale(root_note=440, waveform='square',mode='fixed'):
     '''
@@ -55,7 +55,7 @@ def major_scale(root_note=440, waveform='square',mode='fixed'):
         exit(1)
     
     if waveform=='square':
-        generator = SquareGenerator()
+        generator = SquareGenerator(duration=1)
     else:
         print('Waveform generator not supported.')
         exit(1)
@@ -63,8 +63,7 @@ def major_scale(root_note=440, waveform='square',mode='fixed'):
     scale = []
     for frequency in C_major:
         scale = np.concatenate((scale, generator.generate(frequency)), axis=0)
-    print(scale.shape)
-    wavio.write('c_major_scale.wav', scale, generator.rate, sampwidth=SAMPWIDTH)
+    wavio.write('generated_demos/c_major_scale.wav', scale, generator.rate, sampwidth=SAMPWIDTH)
 
 if __name__=='__main__':
     
