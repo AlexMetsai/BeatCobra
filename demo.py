@@ -46,7 +46,6 @@ def major_scale(root_note=440, waveform='square',mode='fixed'):
     '''
     Simple demo playing the major scale, given the root note.
     '''
-    # TODO
     # Should I calculate the frequencies or use standard values? 
     if mode=='fixed':
         C_major = [261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25]
@@ -56,6 +55,8 @@ def major_scale(root_note=440, waveform='square',mode='fixed'):
     
     if waveform=='square':
         generator = SquareGenerator(duration=1)
+    elif waveform=='saw':
+        generator = SawGenerator(duration=1)
     else:
         print('Waveform generator not supported.')
         exit(1)
@@ -63,7 +64,7 @@ def major_scale(root_note=440, waveform='square',mode='fixed'):
     scale = []
     for frequency in C_major:
         scale = np.concatenate((scale, generator.generate(frequency)), axis=0)
-    wavio.write('generated_demos/c_major_scale.wav', scale, generator.rate, sampwidth=SAMPWIDTH)
+    wavio.write('generated_demos/c_major_scale_'+ waveform + '.wav', scale, generator.rate, sampwidth=SAMPWIDTH)
 
 if __name__=='__main__':
     
@@ -72,3 +73,4 @@ if __name__=='__main__':
     
     snare_kick_kick()
     major_scale()
+    major_scale('saw')
