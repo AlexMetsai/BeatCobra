@@ -60,9 +60,11 @@ def major_scale(root_note=440, waveform='square',mode='fixed'):
         print('Waveform generator not supported.')
         exit(1)
     
+    scale = []
     for frequency in C_major:
-        # Play scale.
-        pass
+        scale = np.concatenate((scale, generator.generate(frequency)), axis=0)
+    print(scale.shape)
+    wavio.write('c_major_scale.wav', scale, generator.rate, sampwidth=SAMPWIDTH)
 
 if __name__=='__main__':
     
@@ -70,3 +72,4 @@ if __name__=='__main__':
            'MIND YOUR EARS IF WEARING HEADPHONES!')
     
     snare_kick_kick()
+    major_scale()
