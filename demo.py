@@ -42,7 +42,7 @@ def snare_kick_kick(beat_repeats=30):
     # Write output to file.
     wavio.write('generated_demos/snare_kick_kick_beat.wav', beat, snare.rate, sampwidth=SAMPWIDTH)
 
-def major_scale(root_note=440, waveform='square', mode='fixed'):
+def major_scale(A4=440, waveform='square', mode='fixed'):
     '''
     Simple demo playing the major scale, given the root note.
     '''
