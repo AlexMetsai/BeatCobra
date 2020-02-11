@@ -4,8 +4,8 @@
 
 import wavio
 import numpy as np
-from percussion import *
-from tone import *
+from beatcobra.percussion import *
+from beatcobra.tone import *
 
 # For a 24 bit file, wav.sampwidth must be equal to 3.
 SAMPWIDTH = 3
