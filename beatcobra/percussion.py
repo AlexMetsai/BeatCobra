@@ -59,3 +59,9 @@ class KickDrum(PercussionGenerator, SineGenerator):
         decay = self.decay_function(decay_factor)
         wave = x * decay
         return(wave)
+
+
+if __name__=='__main__':
+    # This module is meant to be imported, but show some examples.
+    # Would it be best to save or play the generated waveforms?
+    pass
