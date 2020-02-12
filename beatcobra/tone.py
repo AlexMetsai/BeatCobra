@@ -73,6 +73,6 @@ class SawGenerator(ToneGenerator):
         return(wave)
 
 if __name__=='__main__':
-    # This module is ment to be imported, but show some examples.
+    # This module is meant to be imported, but show some examples.
     # Would it be best to save or play the generated waveforms?
     pass
