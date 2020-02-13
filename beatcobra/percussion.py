@@ -21,7 +21,7 @@ class PercussionGenerator:
         # Exponential decay.
         # In the future, add more options for the type of decay.
         x = np.exp(-decay_factor*self.t)
-        return(x)
+        return x
 
 
 class Snare(PercussionGenerator):
@@ -43,7 +43,7 @@ class Snare(PercussionGenerator):
         noise = self.noise(noise_color)
         decay = self.decay_function(decay_factor)
         wave = noise * decay
-        return(wave)
+        return wave
 
 
 class KickDrum(PercussionGenerator, SineGenerator):
@@ -58,7 +58,7 @@ class KickDrum(PercussionGenerator, SineGenerator):
         x = self.waveform(f)
         decay = self.decay_function(decay_factor)
         wave = x * decay
-        return(wave)
+        return wave
 
 
 if __name__=='__main__':
