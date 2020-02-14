@@ -44,7 +44,7 @@ class ToneGenerator:
             # Each consecutive harmonic has less energy than the previous one.
             x += np.power(0.5,i)*self.waveform((i+1)*f)
       
-        return(x)
+        return x
 
 
 class SineGenerator(ToneGenerator):
@@ -53,7 +53,7 @@ class SineGenerator(ToneGenerator):
     
     def waveform(self, f):
         wave = np.sin(2*np.pi*f*self.t)
-        return(wave)
+        return wave
 
 
 class SquareGenerator(ToneGenerator):
@@ -62,7 +62,7 @@ class SquareGenerator(ToneGenerator):
     
     def waveform(self, f):
         wave = signal.square(2*np.pi*f*self.t)
-        return(wave)
+        return wave
 
 class SawGenerator(ToneGenerator):
     def __init__(self, duration=3, rate=22050, harmonics_num=3):
@@ -70,7 +70,7 @@ class SawGenerator(ToneGenerator):
 
     def waveform(self, f):
         wave = signal.sawtooth(2*np.pi*f*self.t)
-        return(wave)
+        return wave
 
 if __name__=='__main__':
     # This module is meant to be imported, but show some examples.
