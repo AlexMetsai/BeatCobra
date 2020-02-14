@@ -7,5 +7,5 @@ def Reverb(signal):
     # A simple protype reverb effect could be implemented using all-pass filters.
     #
     # Furthermore, we can utilize comb filters for a basic sound, and then 
-	# enhance the effect with all-pass filters. We can show the incremental
-	# addition of filters and demonstrate each component's contribution.
+    # enhance the effect with all-pass filters. We can show the incremental
+    # addition of filters and demonstrate each component's contribution.
