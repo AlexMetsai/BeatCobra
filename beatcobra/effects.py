@@ -3,3 +3,6 @@
 def Reverb(signal):
     # How to implement this? Would it be better as a class
     # or as a function? For now we go with a function call.
+    #
+    # A simple protype reverb effect could be implemented
+    # using all-pass filters.
