@@ -6,6 +6,7 @@ def return_key_frequency(A4=440):
     # The second can be easily achived by the following equation:
     # f(n) = (12th-root(2))^(n-49) * 440Hz
     # https://en.wikipedia.org/wiki/Piano_key_frequencies
+    pass
 
 
 if __name__ == '__main__':
