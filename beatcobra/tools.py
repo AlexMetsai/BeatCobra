@@ -1,5 +1,5 @@
 
-def return_key_frequency(A4=440):
+def return_key_frequency(key='C4', A4=440):
     # Things that need to be implemented for now are:
     # 1. Map notes to keys, e.g. A4 = 49th key, etc.
     # 2. Compute the frequency of its key.
