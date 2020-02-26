@@ -40,6 +40,7 @@ def return_key_frequency(key='C4', A4=440):
     # For example, A4 will be: 
     # N = musical_note_order['A'] + 12 * note_number = 1 + 12 * 4 = 49
     key_number = musical_note_oder[note_letter] + 12*int(note_number)
+    # the above calculation is wrong, find a way to fix it
     
     pass
 
