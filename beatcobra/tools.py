@@ -44,8 +44,8 @@ def return_key_frequency(key='C4', A4=440):
     
     # Split input string into single characters.
     note_letter = list(key)[0]
-    note_number = list(key)[1]
-    if (len(list(key)) != 2) or (key_letter not in musical_note_order):
+    note_number = int(list(key)[1])
+    if (len(list(key)) != 2) or (key_letter not in musical_note_order) or (note_number not in range(1,13)):
         print('Error in musical notation. Returning None.')
         return None
     
@@ -54,7 +54,7 @@ def return_key_frequency(key='C4', A4=440):
     # N = musical_note_order['A'] + 12 * note_number - 9 = 10 + 12 * 4 - 9 = 49
     # C4 (middle C) will be:
     # N = 1 + 12 * 4 - 9
-    key_number = musical_note_oder[note_letter] + 12 * int(note_number) - 9
+    key_number = musical_note_oder[note_letter] + 12 * note_number - 9
     
     pass
 
