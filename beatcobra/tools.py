@@ -1,16 +1,29 @@
 
-musical_note_order = {'A':  1, 
-                      'A#': 2, 
-                      'B':  3, 
-                      'C':  4, 
-                      'C#': 5, 
-                      'D':  6, 
-                      'D#': 7, 
-                      'E':  8, 
-                      'F':  9, 
-                      'F#': 10, 
-                      'G':  11, 
-                      'G#': 12}
+musical_note_order = {'C':  1, 
+                      'C#': 2, 
+                      'D':  3, 
+                      'D#': 4, 
+                      'E':  5, 
+                      'F':  6, 
+                      'F#': 7, 
+                      'G':  8, 
+                      'G#': 9,
+                      'A':  10, 
+                      'A#': 11, 
+                      'B':  12}
+
+proper_musical_note_order = {'A':  1, 
+                             'A#': 2, 
+                             'B':  3, 
+                             'C':  4, 
+                             'C#': 5, 
+                             'D':  6, 
+                             'D#': 7, 
+                             'E':  8, 
+                             'F':  9, 
+                             'F#': 10, 
+                             'G':  11, 
+                             'G#': 12}
 
 def return_key_frequency(key='C4', A4=440):
     # Things that need to be implemented for now are:
