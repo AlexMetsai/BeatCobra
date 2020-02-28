@@ -1,4 +1,5 @@
-
+# It may be better to keep these dicts into json files,
+# they look a little bit off here.
 musical_note_order = {'C':  1, 
                       'C#': 2, 
                       'D':  3, 
