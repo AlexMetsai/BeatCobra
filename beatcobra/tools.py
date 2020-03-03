@@ -22,7 +22,7 @@ def return_key_frequency(key='C4', A4=440):
         order = json.load(json_file)
     musical_note_order = order['major_note_order']
     
-    # Split input string into single characters.
+    # Split input string into single characters and check for errors.
     note_letter = list(key)[0]
     note_number = int(list(key)[1])
     if (len(list(key)) != 2) or (key_letter not in musical_note_order) or (note_number not in range(1,13)):
