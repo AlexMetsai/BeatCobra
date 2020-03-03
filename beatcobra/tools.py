@@ -29,14 +29,17 @@ def return_key_frequency(key='C4', A4=440):
         print('Error in musical notation. Returning None.')
         return None
     
-    # Calculate the key number.  
+    # Calculate the key's number.  
     # For example, A4 will be: 
     # N = musical_note_order['A'] + 12 * note_number - 9 = 10 + 12 * 4 - 9 = 49
     # C4 (middle C) will be:
     # N = 1 + 12 * 4 - 9
     key_number = musical_note_order[note_letter] + 12 * note_number - 9
-
-
+    
+    # Calculate key frequency.
+    f = 'temp'
+    
+    return f
 
 if __name__ == '__main__':
     pass
