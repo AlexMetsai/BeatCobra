@@ -3,15 +3,13 @@ import json
 def return_key_frequency(key='C4', A4=440):
     # Return the frequency of the provided note/piano key.
     # https://en.wikipedia.org/wiki/Piano_key_frequencies
-    
-    # Pseudocode:
-    # split string by characters (check)
-    # if string contains more than 2 characters -> error invalid musical note (check)
-    # find musical note order
-    # find which note is given (e.g. the 4th La)
-    # multiply note order with number of note
-    # pass key number to formula
-    # return frequency
+    #
+    # Split string by characters.
+    # Find musical note order.
+    # Find which note is given (e.g. the 4th La).
+    # Multiply note order with number of note.
+    # Pass key number to formula.
+    # Return frequency.
     
     # Load note order.
     with open("note_order.json") as json_file:
