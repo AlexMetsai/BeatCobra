@@ -37,8 +37,8 @@ def return_key_frequency(key='C4', A4=440):
     key_number = musical_note_order[note_letter] + 12 * note_number - 9
     
     # Calculate key frequency.
-    f = 'temp'
-    
+    # f(n) = (12th-root(2))^(n-49) * A4 (Hz)
+    f = (2**(1.0/12))**(key_number-49) * A4
     return f
 
 if __name__ == '__main__':
