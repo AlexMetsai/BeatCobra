@@ -19,7 +19,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import numpy as np
 import wavio
 from scipy import signal
-from tone import *
+from beatcobra.tone import *
 
 
 class PercussionGenerator:
