@@ -35,5 +35,8 @@ def return_key_frequency(key='C4', A4=440):
     f = (2**(1.0/12))**(key_number-49) * A4
     return f
 
+def create_note_frequencies_json():
+    # TODO
+
 if __name__ == '__main__':
     pass
