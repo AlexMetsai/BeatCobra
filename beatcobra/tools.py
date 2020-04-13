@@ -37,6 +37,13 @@ def return_key_frequency(key='C4', A4=440):
 
 def create_note_frequencies_json():
     # TODO
+    # Create a json with all note frequencies.
+    
+    # Load note order.
+    with open("note_order.json") as json_file:
+        order = json.load(json_file)
+    musical_note_order = order['major_note_order']
+    
 
 if __name__ == '__main__':
     pass
