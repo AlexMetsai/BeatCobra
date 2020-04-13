@@ -38,7 +38,7 @@ def return_key_frequency(key='C4', A4=440):
 def create_note_frequencies_json():
     # TODO
     # Create a json with all note frequencies.
-    # For a modern 88-key piano, notes start from A0 and end with C8.
+    # For a modern 88-key standard piano, notes start from A0 and end with C8.
     
     # Load note order.
     with open("note_order.json") as json_file:
