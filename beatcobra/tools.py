@@ -47,7 +47,7 @@ def create_note_frequencies_json():
     for n in range(9):
         for note in musical_note_order:
             key = note + n
-            #calculate frequency
+            f = return_key_frequency(key)
             #store to json
             pass
     
