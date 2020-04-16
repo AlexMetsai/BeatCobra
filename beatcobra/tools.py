@@ -48,6 +48,7 @@ def create_note_frequencies_json():
         for note in musical_note_order:
             #calculate frequency
             #store to json
+            pass
     
 
 if __name__ == '__main__':
