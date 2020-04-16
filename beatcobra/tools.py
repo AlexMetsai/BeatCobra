@@ -44,12 +44,19 @@ def create_note_frequencies_json():
     with open("note_order.json") as json_file:
         order = json.load(json_file)
     musical_note_order = order['major_note_order']
+    
+    key_frequencies = {}
+    
+    # Calculate frequencies for all notes.
     for n in range(9):
         for note in musical_note_order:
             key = note + n
             f = return_key_frequency(key)
-            #store to json
-            pass
+    
+    # store to json
+    with open("note_frequencies.json", "w") as json_file:
+        #dump data
+        pass
     
 
 if __name__ == '__main__':
