@@ -1,6 +1,7 @@
 # A simple demo with current features of BeatCobra.
 # Save generated audio as as wav/mp3 files.
 import time
+import sys
 
 def major_scale(A4=440, waveform='square', mode='fixed'):
     '''
@@ -19,7 +20,7 @@ def major_scale(A4=440, waveform='square', mode='fixed'):
         generator = SawGenerator(duration=1)
     else:
         print('Waveform generator not supported.')
-        exit(1)
+        sys.exit()
     
     scale = []
     for frequency in C_major:
