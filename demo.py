@@ -1,6 +1,7 @@
 # A simple demo with current features of BeatCobra.
 # Save generated audio as as wav/mp3 files.
 
+import sys
 import wavio
 import numpy as np
 from beatcobra.percussion import *
@@ -50,7 +51,7 @@ def major_scale(A4=440, waveform='square', mode='fixed'):
         C_major = [261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25]
     else:
         print('Mode not supported')
-        exit(1)
+        sys.exit()
     
     if waveform=='square':
         generator = SquareGenerator(duration=1)
@@ -58,7 +59,7 @@ def major_scale(A4=440, waveform='square', mode='fixed'):
         generator = SawGenerator(duration=1)
     else:
         print('Waveform generator not supported.')
-        exit(1)
+        sys.exit()
     
     scale = []
     for frequency in C_major:
