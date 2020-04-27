@@ -12,7 +12,7 @@ def major_scale(A4=440, waveform='square', mode='fixed'):
         C_major = [261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25]
     else:
         print('Mode not supported')
-        exit(1)
+        sys.exit()
     
     if waveform=='square':
         generator = SquareGenerator(duration=1)
