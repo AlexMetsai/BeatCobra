@@ -71,8 +71,3 @@ class SawGenerator(ToneGenerator):
     def waveform(self, f):
         wave = signal.sawtooth(2*np.pi*f*self.t)
         return wave
-
-if __name__=='__main__':
-    # This module is meant to be imported, but show some examples.
-    # Would it be best to save or play the generated waveforms?
-    pass
