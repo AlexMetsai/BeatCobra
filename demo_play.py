@@ -2,8 +2,8 @@
 # Save generated audio as as wav/mp3 files.
 import time
 import sys
-from beatcobra.percussion import *
-from beatcobra.tone import *
+from beatcobra.percussion import snare, kick
+from beatcobra.tone import SquareGenerator, SawGenerator
 from beatcobra.tools import return_key_frequency
 
 def major_scale(A4=440, waveform='square', mode='fixed'):
