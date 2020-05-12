@@ -4,8 +4,8 @@
 import sys
 import wavio
 import numpy as np
-from beatcobra.percussion import *
-from beatcobra.tone import *
+from beatcobra.percussion import snare, kick
+from beatcobra.tone import SquareGenerator, SawGenerator
 from beatcobra.tools import return_key_frequency
 
 # For a 24 bit file, wav.sampwidth must be equal to 3.
