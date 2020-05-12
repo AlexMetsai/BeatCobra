@@ -4,14 +4,20 @@ import time
 import sys
 from beatcobra.percussion import *
 from beatcobra.tone import *
+from beatcobra.tools import return_key_frequency
 
 def major_scale(A4=440, waveform='square', mode='fixed'):
     '''
     Simple demo playing the major scale, given the root note.
     '''
-    # Should I calculate the frequencies or use standard values? 
+    # You can use fixed frequencies, or calculate the corresponding 
+    # ones for each note/tone.
     if mode=='fixed':
         C_major = [261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25]
+    elif mode=="dynamic":
+        # A tool for calculated a note's frequency is now implemented.
+        # Include this functionality here.
+        pass
     else:
         print('Mode not supported')
         sys.exit()
