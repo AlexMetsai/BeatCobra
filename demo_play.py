@@ -2,6 +2,8 @@
 # Save generated audio as as wav/mp3 files.
 import time
 import sys
+from beatcobra.percussion import *
+from beatcobra.tone import *
 
 def major_scale(A4=440, waveform='square', mode='fixed'):
     '''
