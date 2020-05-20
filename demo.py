@@ -52,7 +52,7 @@ def major_scale(A4=440, waveform='square', mode='fixed'):
     if mode=='fixed':
         C_major = [261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25]
     elif mode=="dynamic":
-        # A tool for calculated a note's frequency is now implemented.
+        # A tool for calculating a note's frequency is now implemented.
         # Include this functionality here.
         pass
     else:
