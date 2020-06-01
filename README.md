@@ -4,9 +4,9 @@ So far BeatCobra can generate synthesizer and simple percussion sounds. Future m
 
 ### Main dependencies:
 
-- Python 3.6
-- numpy 1.17.2
-- scipy 1.3.3
+- Python 3.6 +
+- numpy 1.17.2 +
+- scipy 1.3.3 +
 - wavio 0.0.4
 
 It is recomended to set the above using a virtual enviroment.
